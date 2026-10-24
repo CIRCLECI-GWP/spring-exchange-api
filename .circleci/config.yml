@@ -1,9 +1,10 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
 version: 2.1
 
 jobs:
   build-and-test:
     docker:
-      - image: cimg/openjdk:19.0.1
+      - image: cimg/openjdk:25.0.4
     steps:
       - checkout
       - run:
